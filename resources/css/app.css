@@ -1,0 +1,196 @@
+/* Mantén las configuraciones de Tailwind CSS al principio */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Header */
+.encabezado {
+    background-color: #582963; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 20px; /* Espaciado interior del encabezado */
+    display: flex; /* Mostrar elementos en una fila */
+    justify-content: space-between; /* Espacio entre elementos en la fila */
+    align-items: center; /* Alineación vertical de elementos */
+}
+/* Estilos para el logo */
+.logo img {
+    max-width: 100px; /* Tamaño máximo del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none; /* Quitar viñetas de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Mostrar elementos de la lista en línea */
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #98accf; /* Cambiado a tu color preferido */
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: #f9f871;
+}
+
+body {
+  background-color: #fff; /* Cambia a tu color preferido */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Estilos generales del formulario */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilos para etiquetas de formulario */
+label {
+  font-weight: bold;
+}
+
+/* Estilos para los campos de entrada de texto y select */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón de envío */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Estilos para el título del segmento adicional */
+#segmentoAdicional h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilos específicos para el segmento adicional */
+#segmentoAdicional select,
+#segmentoAdicional input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.spacer {
+  margin-bottom: 100px; /* Agrega 20px de espacio por debajo del contenedor */
+}
+
+/* Agrega estos estilos CSS a tu archivo Vue o un archivo de estilos por separado */
+
+/* Estilo para el encabezado de la tabla */
+#tablita thead {
+  background-color: #582963;
+  color: #fff;
+}
+
+/* Estilo para las celdas del encabezado */
+#tablita thead th {
+  border-bottom: 2px solid #fff;
+}
+
+/* Estilo para las celdas del cuerpo de la tabla */
+#tablita tbody td {
+  border-bottom: 1px solid #582963;
+}
+
+/* Cambiar el color del texto en las celdas */
+#tablita tbody td {
+  color: #582963;
+}
+
+/* Cambiar el color de fondo al pasar el ratón por las filas */
+#tablita tbody tr:hover {
+  background-color: #0094db;
+  color: #fff;
+}
+
+/* Estilo para el paginador (si se muestra) */
+#tablita_paginate .paginate_button {
+  background-color: #582963;
+  color: #fff;
+  border: 1px solid #582963;
+}
+
+/* Estilo para los botones de navegación del paginador */
+#tablita_paginate .paginate_button.next, #tablita_paginate .paginate_button.previous {
+  background-color: #f58556;
+  color: #fff;
+  border: 1px solid #5F2167;
+}
+
+/* Estilo para los botones de navegación del paginador al pasar el ratón */
+#tablita_paginate .paginate_button.next:hover, #tablita_paginate .paginate_button.previous:hover {
+  background-color: #fff;
+  color: #582963;
+  border: 1px solid #582963;
+}
+
+/* Estilo para el pie de página de la tabla (información sobre registros mostrados) */
+#tablita_info {
+  color: #582963;
+}
+
+/* Estilo para el buscador */
+#tablita_filter label input {
+  border: 1px solid #582963;
+  color: #a13169;
+}
+
+.pdf-button {
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white; /* Texto en color blanco */
+  /* Agrega más estilos según sea necesario */
+}
+/* Agrega estilos personalizados para el botón Excel */
+
+.excel-button {
+  background-color: #3490dc; /* Color de fondo azul */
+  color: white; /* Texto en color blanco */
+  /* Agrega más estilos según sea necesario */
+}
+
